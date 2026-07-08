@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Himmah - Switch on the AI (DeepSeek key)</title>
+<style>
+  :root{color-scheme:dark}
+  body{background:#04060a; color:#dbe3f0; font:15px/1.65 "Segoe UI",system-ui,sans-serif; margin:0; padding:34px 18px 90px}
+  .wrap{max-width:880px; margin:0 auto}
+  h1{font-size:30px; margin:0 0 4px; background:linear-gradient(90deg,#4a8fff,#b06bff,#e068ff); -webkit-background-clip:text; background-clip:text; color:transparent}
+  h2{font-size:20px; margin:46px 0 10px; color:#fff; border-bottom:1px solid #1b2433; padding-bottom:8px}
+  .kicker{font-family:Consolas,monospace; text-transform:uppercase; letter-spacing:2.5px; font-size:11px; color:#4a8fff}
+  .sub{color:#8a93a6; margin:0 0 8px}
+  .step{display:flex; gap:13px; background:linear-gradient(180deg,#0c1018,#070a12); border:1px solid #1b2433; border-radius:14px; padding:15px 17px; margin:11px 0}
+  .step input[type=checkbox]{width:19px; height:19px; margin-top:3px; accent-color:#b06bff; flex:none; cursor:pointer}
+  .step.done{opacity:.55}
+  .step b.t{color:#fff; display:block; margin-bottom:3px}
+  code,.path{font-family:Consolas,monospace; font-size:13px; background:#10182a; border:1px solid #223; border-radius:6px; padding:1px 7px; color:#8fd0ff; word-break:break-all}
+  .expect{margin-top:8px; padding:8px 12px; border-left:3px solid #7cd99e; background:rgba(124,217,158,.07); border-radius:0 8px 8px 0; font-size:13.5px}
+  .expect b{color:#7cd99e}
+  .fix{margin-top:8px; padding:8px 12px; border-left:3px solid #f5c46f; background:rgba(245,196,111,.06); border-radius:0 8px 8px 0; font-size:13.5px}
+  .fix b{color:#f5c46f}
+  .note{background:rgba(176,107,255,.07); border:1px solid rgba(176,107,255,.3); border-radius:12px; padding:12px 16px; margin:14px 0; font-size:14px}
+  .note b{color:#b06bff}
+  table{border-collapse:collapse; width:100%; margin:10px 0; font-size:13.5px}
+  th,td{border:1px solid #1b2433; padding:8px 11px; text-align:left; vertical-align:top}
+  th{color:#fff; background:#0c1018}
+  td:first-child{color:#f5c46f}
+  a{color:#4a8fff}
+  .tag{display:inline-block; font-family:Consolas,monospace; font-size:11px; letter-spacing:1.5px; border:1px solid #2a3a55; border-radius:99px; padding:2px 10px; color:#7cd99e; margin-left:8px; vertical-align:middle}
+</style>
+</head>
+<body><div class="wrap">
+
+<span class="kicker">Himmah · v6.10 · &#10022; AI</span>
+<h1>&#9650; Switch on the AI</h1>
+<p class="sub">Every step from "AI is off" to "the AI helpers are live and tested", with what you should see after each step and what to do if you don't. Tick the boxes as you go - they're remembered on this PC. You should not need to ask "now what?" at any point - and if you get stuck, you can always just skip this guide entirely and keep using Himmah without AI.</p>
+
+<div class="note"><b>Before you start, know this:</b> Himmah already works <b>100% without this</b> - capture, the board, the calendar, habits, rhythms, Naseer and the guided tour all run fully offline. This guide only switches on the optional <b>AI helpers</b>: <b>&#10022; Enhance</b> and <b>&#10022; Enrich</b> (sharpen a messy capture), Inbox <b>Triage</b>, <b>Calendarize tomorrow/my week</b>, the Idea Parking Lot's Sort/Enhance, and the <b>Make it yours</b> onboarding chat. Total time: about <b>2 minutes</b> on Himmah's side (Part 2-3 below); the DeepSeek signup in Part 1 is a one-time thing that usually takes another 3-5 minutes the first time. Cost: DeepSeek's own published price for the model Himmah uses is about <b>&#36;0.14 per million input tokens and &#36;0.28 per million output tokens</b> - and on top of that, Himmah enforces its own <b>hard 10&cent;/day cap on the server</b>, so it can never run away no matter what. New DeepSeek accounts often get a small free trial balance too, so your first tests may cost nothing at all.</div>
+
+<h2>Part 1 - Create your DeepSeek account &amp; key (3-5 min, one time ever)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">1. Sign up at the API platform (not the chat app)</b>
+Go to <a href="https://platform.deepseek.com" target="_blank">platform.deepseek.com</a> and sign up with your email (some accounts can also use a phone number). <b>No credit card is required just to create the account.</b>
+<div class="expect"><b>You should see:</b> the DeepSeek <b>Platform</b> dashboard (usage graphs, a left-side menu with items like <i>API keys</i> and <i>Top up / Billing</i>) - not the consumer chat site.</div>
+<div class="fix"><b>If you land on a chat window instead:</b> that's <code>chat.deepseek.com</code>, the wrong site. Check the address bar says <span class="path">platform.deepseek.com</span>.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">2. Check your balance (top up only if you need to)</b>
+Open <b>Top up</b> (sometimes called Billing) in the left menu. New accounts sometimes start with a small free granted balance for testing - if you already see a non-zero balance, you can skip paying anything for now. When it runs low, add the smallest amount offered (a few dollars); at DeepSeek's own per-token price plus Himmah's 10&cent;/day cap, that lasts weeks to months of normal use.
+<div class="expect"><b>You should see:</b> a non-zero balance shown on the dashboard (free trial credit or your own top-up).</div>
+<div class="fix"><b>If a brand-new key errors immediately with a balance/payment message even though you see free credit:</b> some regions require a card on file before any key works at all. Add a small top-up and try again.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">3. Create an API key and copy it immediately</b>
+Left menu &rarr; <b>API keys</b> &rarr; <b>Create new API key</b> &rarr; name it <code>himmah</code> &rarr; Create. A key starting with <code>sk-</code> appears - <b>DeepSeek shows the full key only this one time.</b> Click copy and paste it into a temporary Notepad right away so you can't lose it before the next step.
+<div class="expect"><b>You should have:</b> a string like <code>sk-xxxxxxxxxxxxxxxxxxxxxxxx</code> sitting in a Notepad window.</div>
+<div class="fix"><b>If you closed the popup before copying:</b> you can't reveal it again - no problem, delete that key on the same page and create a fresh one. Keys are free and unlimited.</div>
+</div></div>
+
+<h2>Part 2 - Give the key to Himmah (1 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">4. Find the key file</b>
+In the folder you extracted Himmah into, open the <span class="path">data</span> sub-folder. There is a file called <span class="path">deepseek_key.txt</span> (it ships empty, 0 bytes) sitting next to <code>tasks.json</code>. Full path from the Himmah folder: <span class="path">data\deepseek_key.txt</span> - there is <b>no separate "app" folder</b> in this build, just <code>data</code> directly inside the Himmah folder.
+<div class="expect"><b>You should see:</b> an empty <span class="path">deepseek_key.txt</span> (0 KB) inside <span class="path">data</span>.</div>
+<div class="fix"><b>If you don't see a <code>.txt</code> ending:</b> Windows hides known file extensions by default. In File Explorer's <b>View</b> menu, tick <b>File name extensions</b> so you can see exactly what each file is called (and avoid accidentally saving it as <code>deepseek_key.txt.txt</code> later).</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">5. (Free rehearsal) Paste the word MOCK and test the plumbing first</b>
+Open <span class="path">deepseek_key.txt</span> in Notepad, type exactly <code>MOCK</code> (4 capital letters, nothing else, no extra line), and Save. This runs every AI feature in a free, fully offline "pretend" mode - it proves the <b>file is in the right place and the right format</b> before you spend a single cent. <b>This is the safest way to learn the flow at &#36;0.</b>
+<div class="expect"><b>You should see (after step 7's reload):</b> clicking the <b>&#10022; AI</b> button shows <b>on &middot; mock mode (no cost)</b> with a purple dot, and running <b>&#10022; Enhance</b> on a task still tidies it (offline, instant, free) - even though the mock reply itself won't literally say "(mock)" in the text, the AI popup's <i>mock mode</i> label is the real proof you're in rehearsal mode, not a live key.</div>
+<div class="fix"><b>If the &#10022; AI popup still says "off - no key yet" after reloading:</b> the file's location or format is wrong, not the key. Re-check you edited <span class="path">data\deepseek_key.txt</span> inside the Himmah folder, and that it isn't secretly named <code>deepseek_key.txt.txt</code>.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">6. Paste your real key</b>
+Once MOCK works, open the same file again, delete <code>MOCK</code>, paste your real <code>sk-...</code> key (just the key - no quotes, no spaces, no extra blank lines), and Save.
+<div class="expect"><b>You should see:</b> the file's size jump from 0 bytes to roughly 35-40 bytes (one short line).</div>
+<div class="fix"><b>If Notepad offers a "Save As" dialog:</b> keep the file name exactly <span class="path">deepseek_key.txt</span> and set <b>Encoding: UTF-8</b>, <b>Save as type: All files</b> - so it can't quietly become <code>deepseek_key.txt.txt</code>.</div>
+</div></div>
+
+<h2>Part 3 - Prove it works for real (1 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">7. Reload Himmah and check the chip</b>
+Back in the Himmah window, press <code>Ctrl</code>+<code>R</code> to reload. You do <b>not</b> need to restart the server or close the console window - the key file is read fresh on every single AI call, so a reload is always enough.
+<div class="expect"><b>You should see:</b> the <b>&#10022; AI</b> button (top-left of the bar) turns on; clicking it shows <b>on &middot; deepseek-v4-flash</b> with a purple dot and a spend line reading <i>0.00&cent; of 10&cent; today &middot; 0 calls &middot; hard cap, enforced by the server</i>.</div>
+<div class="fix"><b>If it still reads "off - no key yet":</b> the file is empty, misplaced, or misnamed - redo step 4-6. Note: this indicator lights for <i>any</i> non-empty file, even a wrong key - so don't trust the chip alone; step 8 is the real proof.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">8. The real test: run &#10022; Enhance on a task</b>
+Type any messy thought into the top capture bar (e.g. <code>gtta email prof abt thesis tmrw</code>) and press Enter. It lands in the <b>Inbox</b> (top bar). Open the Inbox, find your new item, and click its <b>&#10022; Enhance</b> button.
+<div class="expect"><b>You should see:</b> a preview popup with the original on one side and a cleaned-up rewrite on the other, with <i>&check; Use enhanced</i> / <i>&cross; Keep original</i> buttons - approve or reject, nothing is ever applied silently. Then reopen the <b>&#10022; AI</b> button: the spend line should now read something tiny but <b>non-zero</b>, like <i>0.01&cent; of 10&cent; today &middot; 1 call</i> - that non-zero number (never seen in mock mode, which always stays 0.00&cent;) is the real, unambiguous proof your key is live and DeepSeek was actually billed.</div>
+<div class="fix"><b>"&#9888; DeepSeek HTTP 401 - ..." toast:</b> the key is wrong or was revoked - create a fresh one (Part 1, step 3) and redo Part 2. <b>"&#9888; daily AI budget (10&cent;) reached...":</b> you've hit today's hard cap; it resets at midnight, nothing is broken. <b>"&#9888; DeepSeek unreachable (...)":</b> you're offline right now - AI needs internet, the rest of Himmah doesn't. <b>"&#10022; already clean - kept as-is":</b> that's fine - the AI decided your text needed no changes, the guardrail working as designed.</div>
+</div></div>
+
+<h2>Daily-use cheat sheet</h2>
+<table>
+<tr><th>You want&hellip;</th><th>Do this</th></tr>
+<tr><td>Tidy a messy capture</td><td>Inbox &rarr; <b>&#10022; Enhance</b> on the item (preview, then approve/reject)</td></tr>
+<tr><td>Add real-world detail to a fragment</td><td>Inbox/editor &rarr; <b>&#10022; Enrich</b> - draws on <code>data/life_context.md</code>, never invents facts</td></tr>
+<tr><td>Sort the whole inbox at once</td><td><b>&#10022; AI &rarr; Triage the inbox now</b></td></tr>
+<tr><td>Plan tomorrow around your prayers</td><td>Calendar &rarr; <b>Calendarize tomorrow</b></td></tr>
+<tr><td>Build your own life from scratch</td><td><b>&#10022; AI &rarr; Make it yours</b> (clears the demo, guided chat)</td></tr>
+<tr><td>Check today's spend</td><td>Click the <b>&#10022; AI</b> button - live &cent; used of 10&cent; <span class="tag">FREE</span></td></tr>
+<tr><td>Rehearse any AI flow for &#36;0</td><td>Put <code>MOCK</code> in <span class="path">data\deepseek_key.txt</span> + reload <span class="tag">FREE</span></td></tr>
+<tr><td>Turn AI off again</td><td>Empty <span class="path">data\deepseek_key.txt</span> and reload</td></tr>
+</table>
+
+<h2>If something goes wrong later</h2>
+<table>
+<tr><th>Symptom (the exact text Himmah shows)</th><th>Meaning &amp; fix</th></tr>
+<tr><td>"AI is off - no key in data/deepseek_key.txt (see the Setup Guides folder)"</td><td>The key file is empty or missing - <span class="path">data\deepseek_key.txt</span> sits next to Himmah's own files, and this guide is the one to follow. Do Part 2.</td></tr>
+<tr><td>"&#10022; AI paused - daily budget reached"</td><td>You hit today's 10&cent; hard cap. Resets at midnight; nothing to fix.</td></tr>
+<tr><td>"DeepSeek HTTP 401 - &hellip;" (extra text follows)</td><td>The key is wrong, revoked, or the account has no credit. Make a new key + confirm a balance (Part 1).</td></tr>
+<tr><td>"daily AI budget (10&cent;) reached - resets at midnight"</td><td>Same hard cap as above, shown from a direct AI call. Waits for midnight.</td></tr>
+<tr><td>"DeepSeek unreachable (&hellip;) - offline? AI needs internet; the rest of the app doesn't."</td><td>No internet right now. Everything except the &#10022; features keeps working offline.</td></tr>
+<tr><td>"DeepSeek returned unreadable JSON - try again"</td><td>A rare hiccup on DeepSeek's side. Click the button again.</td></tr>
+<tr><td>The &#10022; AI chip is "on" but a feature still fails</td><td>The chip lights for <i>any</i> non-empty key file, even an invalid one. The real proof is step 8's non-zero spend - if that never appears, the key itself is bad; replace it (Part 1, step 3).</td></tr>
+</table>
+
+<p class="sub" style="margin-top:30px">Next, optional: <b>2 - Google Meet links</b> (only if you want a Meet link button on calendar events). Reference: <code>README.md</code> in the Himmah folder. &#9650;</p>
+
+</div>
+<script>
+document.querySelectorAll('.step input[type=checkbox]').forEach((cb, i) => {
+  try { if (localStorage.getItem('guide_himmah_ai_' + i) === '1') { cb.checked = true; cb.closest('.step').classList.add('done'); } } catch (e) {}
+  cb.addEventListener('change', () => {
+    cb.closest('.step').classList.toggle('done', cb.checked);
+    try { localStorage.setItem('guide_himmah_ai_' + i, cb.checked ? '1' : '0'); } catch (e) {}
+  });
+});
+</script>
+</body>
+</html>

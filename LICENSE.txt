@@ -1,0 +1,16 @@
+Himmah
+Copyright (c) 2026 Enis Lucas Ziadin.
+All rights reserved.
+
+Every file in this folder and all of its subfolders - including the source code
+(server.py, app.js, index.html, styles.css and all other code), the design, the
+artwork and icons, the demo content, the setup guides, and all accompanying text -
+is the property of Enis Lucas Ziadin.
+
+No part of this software or its contents may be copied, reproduced, redistributed,
+published, sublicensed, sold, or used to create derivative works, in whole or in
+part, without the prior written permission of Enis Lucas Ziadin.
+
+This software is provided "as is", without warranty of any kind, express or implied.
+In no event shall the author be liable for any claim, damages, or other liability
+arising from the use of this software.

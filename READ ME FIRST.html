@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Himmah - Read Me First</title>
+<style>
+  :root{color-scheme:dark}
+  body{background:#04060a; color:#dbe3f0; font:15px/1.65 "Segoe UI",system-ui,sans-serif; margin:0; padding:34px 18px 90px}
+  .wrap{max-width:880px; margin:0 auto}
+  h1{font-size:30px; margin:0 0 4px; background:linear-gradient(90deg,#4a8fff,#b06bff,#e068ff); -webkit-background-clip:text; background-clip:text; color:transparent}
+  h2{font-size:20px; margin:46px 0 10px; color:#fff; border-bottom:1px solid #1b2433; padding-bottom:8px}
+  .kicker{font-family:Consolas,monospace; text-transform:uppercase; letter-spacing:2.5px; font-size:11px; color:#4a8fff}
+  .sub{color:#8a93a6; margin:0 0 8px}
+  .step{display:flex; gap:13px; background:linear-gradient(180deg,#0c1018,#070a12); border:1px solid #1b2433; border-radius:14px; padding:15px 17px; margin:11px 0}
+  .step input[type=checkbox]{width:19px; height:19px; margin-top:3px; accent-color:#b06bff; flex:none; cursor:pointer}
+  .step.done{opacity:.55}
+  .step b.t{color:#fff; display:block; margin-bottom:3px}
+  code,.path{font-family:Consolas,monospace; font-size:13px; background:#10182a; border:1px solid #223; border-radius:6px; padding:1px 7px; color:#8fd0ff; word-break:break-all}
+  .expect{margin-top:8px; padding:8px 12px; border-left:3px solid #7cd99e; background:rgba(124,217,158,.07); border-radius:0 8px 8px 0; font-size:13.5px}
+  .expect b{color:#7cd99e}
+  .fix{margin-top:8px; padding:8px 12px; border-left:3px solid #f5c46f; background:rgba(245,196,111,.06); border-radius:0 8px 8px 0; font-size:13.5px}
+  .fix b{color:#f5c46f}
+  .note{background:rgba(176,107,255,.07); border:1px solid rgba(176,107,255,.3); border-radius:12px; padding:12px 16px; margin:14px 0; font-size:14px}
+  .note b{color:#b06bff}
+  table{border-collapse:collapse; width:100%; margin:10px 0; font-size:13.5px}
+  th,td{border:1px solid #1b2433; padding:8px 11px; text-align:left; vertical-align:top}
+  th{color:#fff; background:#0c1018}
+  td:first-child{color:#f5c46f}
+  a{color:#4a8fff}
+  .tag{display:inline-block; font-family:Consolas,monospace; font-size:11px; letter-spacing:1.5px; border:1px solid #2a3a55; border-radius:99px; padding:2px 10px; color:#7cd99e; margin-left:8px; vertical-align:middle}
+</style>
+</head>
+<body><div class="wrap">
+
+<span class="kicker">Himmah · read me first · welcome</span>
+<h1>&#9650; Read Me First</h1>
+<p class="sub">A friend sent you this. Here's everything you need, in order, to go from "unzipped it" to "using it every day" - what to click, what you should see, and what to do if something looks off. You don't need to know anything technical.</p>
+
+<h2>1. What is Himmah?</h2>
+<div class="note">Himmah is a calm, private to-do dashboard: you type whatever's on your mind and it turns into a sorted list of tasks, habits and a weekly calendar built around your five daily prayers. It runs entirely <b>on this computer</b> - your data never leaves it unless you choose to switch on an optional AI helper later.</div>
+
+<h2>2. How to open it</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Unzip it anywhere</b>
+Right-click the ZIP you were sent &rarr; <b>Extract All...</b> (or use your favourite unzip tool) &rarr; pick any folder - your Desktop, Documents, anywhere you like.
+<div class="expect"><b>You should see:</b> a new folder called <span class="path">Himmah</span> appears, containing <code>Start Himmah.bat</code>, <code>index.html</code>, a <span class="path">Setup Guides</span> folder, and a <span class="path">data</span> folder.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Double-click Start Himmah.bat</b>
+Open the <span class="path">Himmah</span> folder and double-click <code>Start Himmah.bat</code>. Here is <b>exactly</b> what it does, so nothing surprises you:
+<br>1. Opens a plain black console window titled "Himmah - keep this window open while you use the app".
+<br>2. Checks whether <b>Python 3</b> is already on your PC. Himmah is built on it and needs it to run.
+<br>3. <b>If Python is missing, it installs it FOR you automatically</b> - no admin password needed - first trying Windows' own app installer (winget), then falling back to downloading the official installer from python.org and running it silently. You don't need to do anything for this except wait a minute.
+<br>4. After 3 seconds it opens your normal web browser at <code>http://127.0.0.1:7777/</code> - that's Himmah, running only on your own PC (that address never leaves your computer).
+<div class="expect"><b>You should see:</b> the black console prints "Starting Himmah... it will open in your browser at http://127.0.0.1:7777/" and "Keep THIS window open while you use the app. Close it to stop Himmah." - then your browser opens showing the Himmah board.</div>
+<div class="fix"><b>If Windows shows a blue "Windows protected your PC" screen:</b> this is normal for any script you got from a friend rather than the Microsoft Store - it isn't a virus warning about what's inside, just an "I don't recognise this publisher" flag. Click <b>More info</b> &rarr; <b>Run anyway</b>.
+<br><b>If a Windows Firewall box asks to allow Python/Himmah to communicate:</b> click <b>Allow access</b>. It's safe - by default Himmah only listens on your own PC; allowing it just avoids any hiccups.
+<br><b>If the console says Python was installed but still can't find it:</b> it will tell you to close the window and double-click <code>Start Himmah.bat</code> a second time - that one extra click lets Windows pick up the new install. If even that fails, it prints manual steps: go to <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a>, click the big yellow <b>Download Python</b> button, run the installer and <b>tick "Add python.exe to PATH"</b>, then try <code>Start Himmah.bat</code> again.</div>
+</div></div>
+
+<h2>3. Make yourself a desktop shortcut (optional, 1 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Send it to your Desktop</b>
+In the <span class="path">Himmah</span> folder, right-click <code>Start Himmah.bat</code> &rarr; <b>Send to</b> &rarr; <b>Desktop (create shortcut)</b>.
+<div class="expect"><b>You should see:</b> a new shortcut icon on your Desktop called "Start Himmah - Shortcut".</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Rename it (and, optionally, set an icon)</b>
+Right-click the new Desktop shortcut &rarr; <b>Rename</b> &rarr; type <code>Himmah</code>. That's all most people need.
+<div class="expect"><b>You should see:</b> the shortcut now reads simply "Himmah".</div>
+<div class="fix"><b>About a custom icon:</b> this ZIP ships <code>icon.svg</code>, <code>icon-192.png</code> and <code>icon-512.png</code> (used inside the app/browser tab), but <b>no <code>.ico</code> file</b> - and Windows shortcuts can only pick up <code>.ico</code> files in the "Change Icon" dialog, not <code>.png</code>/<code>.svg</code> directly. Simplest: skip this, the default icon works fine. If you really want a custom one, convert <code>icon-512.png</code> to <code>.ico</code> with any free online converter first, then Properties &rarr; Change Icon &rarr; Browse to it.</div>
+</div></div>
+
+<h2>4. Getting to fully working, in order</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">First open: explore the demo</b>
+The very first time, Himmah opens with a filled-in demo week already inside it (a fictional person's tasks, habits and prayer times) so there's something real to look at immediately - not a blank page.
+<div class="expect"><b>You should see:</b> a populated board with categories, a calendar with events, and a few habits already tracked.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Follow the guided tour</b>
+A tour starts on its own the first time, split into short chapters with a little map showing done/current/upcoming, so it never overwhelms you.
+<div class="expect"><b>You should see:</b> a dimmed overlay highlighting one part of the screen at a time, explaining what it does, with <b>Next</b> / <b>Back</b> buttons.</div>
+<div class="fix"><b>Want to skip it (now or partway through)?</b> Click <b>Skip tour</b> (or "skip this chapter") any time - nothing is lost, you can always retake it from the tour button in the &#10022; AI menu.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Switch on the AI (optional, recommended, ~2 min)</b>
+Open the <span class="path">Setup Guides</span> folder inside your Himmah folder and follow <code>1 - Switch on the AI (DeepSeek key, 2 min).html</code>. It walks you through getting your own free/cheap DeepSeek key and pasting it in - step by step, nothing assumed.
+<div class="expect"><b>You should see:</b> once done, the &#10022; <b>AI</b> button (top-left) shows "on" and features like &#10022; Enhance actually rewrite your messy captures.</div>
+<div class="fix"><b>Don't want to bother?</b> Totally fine - skip straight to the next step. See section 5 below for exactly what you'd be missing (it's small).</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">Import your prayer times into the Calendar</b>
+Open <b>Calendar</b> (top bar) &rarr; click <b>&#128139; prayer times</b> &rarr; click <b>Populate calendar</b>. It ships with a demo mosque's timetable already loaded, so this works immediately with no setup.
+<div class="expect"><b>You should see:</b> a row of &#127960; prayer blocks appear across the next 7 (or 30) days in your calendar.</div>
+<div class="fix"><b>Want YOUR real mosque's times instead of the demo ones?</b> In that same popup, click <b>Upload prayer times in your mosque (PDF)</b> and pick your mosque's timetable PDF - it reads it in automatically.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">When you're ready: clear the demo and make it yours</b>
+Either finish the guided tour and click its last button, <b>&#9762; Nuclear - start MY journey</b>, or anytime click <b>&#10022; AI</b> (top-left) &rarr; <b>&#127769; Make it yours</b>. Either safely wipes the demo data and then walks you, chat-style, through building your <i>own</i> tasks, habits and rhythms.
+<div class="expect"><b>You should see:</b> the demo tasks disappear and a friendly chat window asks about your real life instead. Don't worry - the demo isn't gone forever: it's saved automatically in <b>History</b> (top bar &rarr; &#8942; More &rarr; History) if you ever want to peek at it again.</div>
+<div class="fix"><b>This part needs the AI key from step 3 above</b> to have its smart conversation - without a key it still clears the demo but can't chat-build things for you (you'd add tasks/habits by hand instead, which works fine too).</div>
+</div></div>
+
+<h2>5. What works without the AI key</h2>
+<div class="note"><b>You are never stuck.</b> Everything in Himmah works fully offline and forever, with zero setup, <b>except</b> the handful of buttons marked <b>&#10022;</b> (Enhance, Enrich, Triage, the Idea Parking Lot's Sort/Enhance, and the smart chat parts of Make it yours / Naseer). Without a key those just show a small "AI is off" message when clicked - harmless, nothing breaks, the rest of the app is completely unaffected. Specifically, <b>without</b> any key you still get: capturing thoughts, the whole board/calendar/habits/rhythms, dragging and organising tasks, the Guardian/Waiting/Tidy/Archive/History views, the entire guided tour, prayer-time importing (section 4 above), and even typing a deadline in plain English like <i>"call the dentist tomorrow"</i> or <i>"in 3 days"</i> or <i>"next week"</i> - that free date-recognition needs no AI at all. Even <b>Calendarize tomorrow</b> has a basic offline version that lays your day out without a key, just a simpler one than the AI version.</div>
+
+<p class="sub" style="margin-top:30px">More detail any time: <code>README.md</code> in the Himmah folder, or the two guides in <span class="path">Setup Guides</span>. Enjoy - and Bismillah on your own journey with it. &#9650;</p>
+
+</div>
+<script>
+document.querySelectorAll('.step input[type=checkbox]').forEach((cb, i) => {
+  try { if (localStorage.getItem('guide_himmah_readmefirst_' + i) === '1') { cb.checked = true; cb.closest('.step').classList.add('done'); } } catch (e) {}
+  cb.addEventListener('change', () => {
+    cb.closest('.step').classList.toggle('done', cb.checked);
+    try { localStorage.setItem('guide_himmah_readmefirst_' + i, cb.checked ? '1' : '0'); } catch (e) {}
+  });
+});
+</script>
+</body>
+</html>

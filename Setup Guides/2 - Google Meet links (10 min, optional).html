@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Himmah - Google Meet links (optional)</title>
+<style>
+  :root{color-scheme:dark}
+  body{background:#04060a; color:#dbe3f0; font:15px/1.65 "Segoe UI",system-ui,sans-serif; margin:0; padding:34px 18px 90px}
+  .wrap{max-width:880px; margin:0 auto}
+  h1{font-size:30px; margin:0 0 4px; background:linear-gradient(90deg,#4a8fff,#b06bff,#e068ff); -webkit-background-clip:text; background-clip:text; color:transparent}
+  h2{font-size:20px; margin:46px 0 10px; color:#fff; border-bottom:1px solid #1b2433; padding-bottom:8px}
+  .kicker{font-family:Consolas,monospace; text-transform:uppercase; letter-spacing:2.5px; font-size:11px; color:#4a8fff}
+  .sub{color:#8a93a6; margin:0 0 8px}
+  .step{display:flex; gap:13px; background:linear-gradient(180deg,#0c1018,#070a12); border:1px solid #1b2433; border-radius:14px; padding:15px 17px; margin:11px 0}
+  .step input[type=checkbox]{width:19px; height:19px; margin-top:3px; accent-color:#b06bff; flex:none; cursor:pointer}
+  .step.done{opacity:.55}
+  .step b.t{color:#fff; display:block; margin-bottom:3px}
+  code,.path{font-family:Consolas,monospace; font-size:13px; background:#10182a; border:1px solid #223; border-radius:6px; padding:1px 7px; color:#8fd0ff; word-break:break-all}
+  pre{font-family:Consolas,monospace; font-size:13px; background:#10182a; border:1px solid #223; border-radius:8px; padding:11px 13px; color:#8fd0ff; overflow:auto}
+  .expect{margin-top:8px; padding:8px 12px; border-left:3px solid #7cd99e; background:rgba(124,217,158,.07); border-radius:0 8px 8px 0; font-size:13.5px}
+  .expect b{color:#7cd99e}
+  .fix{margin-top:8px; padding:8px 12px; border-left:3px solid #f5c46f; background:rgba(245,196,111,.06); border-radius:0 8px 8px 0; font-size:13.5px}
+  .fix b{color:#f5c46f}
+  .note{background:rgba(176,107,255,.07); border:1px solid rgba(176,107,255,.3); border-radius:12px; padding:12px 16px; margin:14px 0; font-size:14px}
+  .note b{color:#b06bff}
+  table{border-collapse:collapse; width:100%; margin:10px 0; font-size:13.5px}
+  th,td{border:1px solid #1b2433; padding:8px 11px; text-align:left; vertical-align:top}
+  th{color:#fff; background:#0c1018}
+  td:first-child{color:#f5c46f}
+  a{color:#4a8fff}
+  .tag{display:inline-block; font-family:Consolas,monospace; font-size:11px; letter-spacing:1.5px; border:1px solid #2a3a55; border-radius:99px; padding:2px 10px; color:#7cd99e; margin-left:8px; vertical-align:middle}
+</style>
+</head>
+<body><div class="wrap">
+
+<span class="kicker">Himmah · v6.10 · &#127909; Meet</span>
+<h1>&#9650; Google Meet links</h1>
+<p class="sub">How to connect Himmah to your Google Calendar so the <b>&#127909; Meet link</b> button on a calendar event creates a real Google Meet URL. Every step, with what you should see and what to do if you don't. Tick the boxes - they're remembered on this PC.</p>
+
+<div class="note"><b>Before you start, know this:</b> This is <b>completely optional</b> and only affects one button - the &#127909; on a calendar event. Everything else in Himmah works without it, and you can always paste a Meet link you already have with the <b>&#128279;</b> button instead - no setup needed. This is the longest setup in Himmah: <b>about 10 minutes, one time</b>, because Google's own permissions screens are fiddly (and Google reorganised them again recently - the steps below match what's live as of mid-2026). It's <b>free</b> (the Google Calendar API has no cost at this scale). You'll need a Google account. We use Google's own <b>OAuth Playground</b> so you never have to write or run any code.</div>
+
+<h2>Part 1 - A Google project with the Calendar API on (3 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">1. Create a Google Cloud project</b>
+Go to <a href="https://console.cloud.google.com/projectcreate" target="_blank">console.cloud.google.com/projectcreate</a>, name it <code>Himmah</code>, and click Create. Wait a few seconds, then make sure it's the <b>selected</b> project (top bar).
+<div class="expect"><b>You should see:</b> "Himmah" shown as the current project in the blue top bar.</div>
+<div class="fix"><b>If it asks you to pick an organisation:</b> choose "No organisation" - a personal project is fine.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">2. Enable the Google Calendar API</b>
+Go to <a href="https://console.cloud.google.com/apis/library/calendar-json.googleapis.com" target="_blank">this API Library page</a> (Google Calendar API) and click <b>Enable</b>.
+<div class="expect"><b>You should see:</b> the Calendar API page now shows a "Manage" button and "API Enabled".</div>
+<div class="fix"><b>If "Enable" is greyed out or the page looks unrelated:</b> the wrong project is selected - switch to "Himmah" in the top bar and reload the page.</div>
+</div></div>
+
+<h2>Part 2 - OAuth credentials (4 min)</h2>
+<p class="sub">Google reorganised this area into <b>Google Auth Platform</b> (three tabs: <i>Branding</i>, <i>Audience</i>, <i>Clients</i>) - it used to be one page called "OAuth consent screen". If your console still shows the old single-page layout, the same fields exist there under different tab names; just follow the field names below rather than the exact tab.</p>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">3. Set the app name (Branding tab)</b>
+Go to <a href="https://console.cloud.google.com/auth/branding" target="_blank">APIs &amp; Services &rarr; Google Auth Platform &rarr; Branding</a>. Enter an app name (<code>Himmah</code>) and a support email (your own), then Save.
+<div class="expect"><b>You should see:</b> the Branding page shows "Himmah" as the app name with no red warnings.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">4. Set External + add yourself as a test user (Audience tab)</b>
+Go to <a href="https://console.cloud.google.com/auth/audience" target="_blank">Google Auth Platform &rarr; Audience</a>. Set the user type to <b>External</b>. Under <b>Test users</b>, click <b>Add users</b> and add <b>your own Google email</b>. <b>You do not need to publish or get verified</b> - leaving Publishing status as <b>"Testing"</b> is correct and normal for personal use.
+<div class="expect"><b>You should see:</b> your email listed under Test users, and Publishing status reads "Testing".</div>
+<div class="fix"><b>If you skip adding yourself as a test user:</b> step 7 will fail with "access_denied" / "app not verified". Come back here and add your exact email.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">5. Create an OAuth client ID (Web application)</b>
+Go to <a href="https://console.cloud.google.com/auth/clients" target="_blank">Google Auth Platform &rarr; Clients</a> (older consoles call this <i>APIs &amp; Services &rarr; Credentials</i> - same feature). Click <b>Create Client</b>, Application type <b>Web application</b>. Under <b>Authorised redirect URIs</b> click "Add URI" and paste <b>exactly</b>:
+<pre>https://developers.google.com/oauthplayground</pre>
+Click Create.
+<div class="expect"><b>You should see:</b> a popup with your <b>Client ID</b> (ends in <code>.apps.googleusercontent.com</code>) and <b>Client secret</b> (starts <code>GOCSPX-</code>). Copy both into a temporary note.</div>
+<div class="fix"><b>If you used "Desktop app" by mistake:</b> the Playground won't accept it - delete it and create a <b>Web application</b> client with the exact redirect URI above (no trailing slash).</div>
+</div></div>
+
+<h2>Part 3 - Get a refresh token with the OAuth Playground (2 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">6. Tell the Playground to use your client</b>
+Open <a href="https://developers.google.com/oauthplayground" target="_blank">developers.google.com/oauthplayground</a>. Click the <b>gear icon</b> (top right) &rarr; tick <b>"Use your own OAuth credentials"</b> &rarr; paste your <b>Client ID</b> and <b>Client secret</b> from step 5.
+<div class="expect"><b>You should see:</b> the gear panel now shows your own Client ID instead of Google's shared one.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">7. Choose the Calendar scope and authorise</b>
+In the left <b>Step 1</b> box, scroll to the empty "Input your own scopes" field and paste:
+<pre>https://www.googleapis.com/auth/calendar.events</pre>
+Click <b>Authorise APIs</b>, sign in with the <b>same Google account you added as a test user</b>, and click <b>Allow</b>.
+<div class="expect"><b>You should see:</b> a Google warning "Google hasn't verified this app" - click <b>Advanced</b> &rarr; "Go to Himmah (unsafe)" &rarr; Allow. This is expected and normal for a personal, unverified app. You then return to the Playground on <b>Step 2</b>.</div>
+<div class="fix"><b>If you get "access_denied":</b> the signed-in account isn't listed as a test user. Go back to Part 2, step 4 and add that exact email.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">8. Exchange for tokens and copy the refresh token</b>
+On <b>Step 2</b>, click <b>Exchange authorisation code for tokens</b>. A <b>Refresh token</b> appears (starts with <code>1//</code>). Copy it.
+<div class="expect"><b>You should see:</b> a <code>Refresh token</code> field filled with a long <code>1//...</code> string (an access token also appears - you can ignore it, Himmah gets its own from the refresh token automatically).</div>
+<div class="fix"><b>If the refresh token is blank:</b> revoke access at <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a> (remove "Himmah"), then redo steps 7-8 - Google only hands out a refresh token on the first authorisation for a given app+account pair.</div>
+</div></div>
+
+<h2>Part 4 - Give it to Himmah + test (1 min)</h2>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">9. Fill in google_meet.json</b>
+Open your Himmah folder &rarr; <span class="path">data</span> &rarr; <span class="path">google_meet.json</span> in Notepad. Replace its contents with this, pasting your three values (keep the quotes and commas exactly):
+<pre>{
+  "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+  "client_secret": "GOCSPX-your_secret",
+  "refresh_token": "1//your_refresh_token",
+  "calendar_id": "primary"
+}</pre>
+Save. (Leave <code>calendar_id</code> as <code>"primary"</code> unless you want a specific calendar.)
+<div class="expect"><b>You should see:</b> a small valid JSON file - four keys, each in double quotes, no trailing comma after the last line.</div>
+<div class="fix"><b>If Himmah later says it can't read it:</b> a stray comma or a "smart quote" from Notepad broke the JSON. Make sure every quote is a straight <code>"</code> character.</div>
+</div></div>
+
+<div class="step"><input type="checkbox"><div>
+<b class="t">10. The real test: make a Meet link</b>
+Reload Himmah (<code>Ctrl</code>+<code>R</code>). Open the <b>Calendar</b>, create or open an event, and in its description area click <b>&#127909; Meet link</b>.
+<div class="expect"><b>You should see:</b> a real <code>https://meet.google.com/xxx-xxxx-xxx</code> link dropped into the event's description, and the event now exists for real in your Google Calendar (not just in Himmah).</div>
+<div class="fix"><b>"Google isn't connected yet - open GOOGLE-MEET-SETUP-GUIDE.html to connect it.":</b> ignore the filename in that message - it refers to Himmah's main build; in this share build, <b>this guide</b> is the setup doc. It means one of the three fields in <span class="path">google_meet.json</span> is missing - re-check step 9. <b>"Google API HTTP 401 - token may be expired; reconnect.":</b> see the note below about 7-day tokens. <b>If you don't want any of this:</b> use the <b>&#128279;</b> button instead to paste a Meet link you already have - zero setup.</div>
+</div></div>
+
+<div class="note"><b>A real Google limit to know about:</b> while your Google Cloud project's Audience status stays "Testing" (which is the normal, correct choice above), Google automatically <b>expires the authorisation after about 7 days</b> - this is a Google policy for unverified test apps, not a Himmah bug. If the Meet button starts failing with <b>"Google API HTTP 401 - token may be expired; reconnect."</b> after roughly a week of not using it, it's this expiry. The fix is always the same: redo <b>Part 3</b> (steps 6-8) to get a fresh refresh token, paste it into <span class="path">google_meet.json</span>, save, reload. (Advanced option: in <i>Google Auth Platform &rarr; Audience</i> you can click <b>Publish app</b> to move to "In production", which removes the 7-day limit - you'll still see the same "unverified app" warning to click through each time you re-authorise, since Calendar access is a "sensitive" scope Google doesn't require full review for at personal-use scale, but this is optional and not required for the guide above to work.)</div>
+
+<h2>Daily-use cheat sheet</h2>
+<table>
+<tr><th>You want&hellip;</th><th>Do this</th></tr>
+<tr><td>A new Meet link on an event</td><td>Event &rarr; &#127909; Meet link <span class="tag">FREE</span></td></tr>
+<tr><td>Use a link you already have</td><td>Event &rarr; &#128279; paste it (no Google setup) <span class="tag">FREE</span></td></tr>
+<tr><td>Switch Meet off</td><td>Set <span class="path">data\google_meet.json</span> to <code>{}</code> and reload</td></tr>
+</table>
+
+<h2>If something goes wrong later</h2>
+<table>
+<tr><th>Symptom (the exact text Himmah shows)</th><th>Meaning &amp; fix</th></tr>
+<tr><td>Google isn't connected yet - open GOOGLE-MEET-SETUP-GUIDE.html to connect it.</td><td>One of the three values in <span class="path">data\google_meet.json</span> is missing (the filename it names isn't shipped in this build - use this guide instead). Re-do step 9.</td></tr>
+<tr><td>Google API HTTP 401 - token may be expired; reconnect.</td><td>The refresh token or client secret is wrong, revoked, or hit the 7-day Testing-mode expiry described above. Redo Part 3 (steps 6-8).</td></tr>
+<tr><td>Google made the event but returned no Meet link</td><td>The event was created without conferencing data. Try again; if it persists, double check the Calendar API is Enabled (Part 1, step 2).</td></tr>
+<tr><td>Google API error (&hellip;)</td><td>An unexpected error class from Google's side (network hiccup, quota, etc). Try again in a moment.</td></tr>
+<tr><td>access_denied during authorisation</td><td>The Google account you signed in with isn't a test user. Add it (Part 2, step 4).</td></tr>
+</table>
+
+<p class="sub" style="margin-top:30px">That's everything optional. Himmah is fully usable without either guide. Reference: <code>README.md</code> in the Himmah folder. &#9650;</p>
+
+</div>
+<script>
+document.querySelectorAll('.step input[type=checkbox]').forEach((cb, i) => {
+  try { if (localStorage.getItem('guide_himmah_meet_' + i) === '1') { cb.checked = true; cb.closest('.step').classList.add('done'); } } catch (e) {}
+  cb.addEventListener('change', () => {
+    cb.closest('.step').classList.toggle('done', cb.checked);
+    try { localStorage.setItem('guide_himmah_meet_' + i, cb.checked ? '1' : '0'); } catch (e) {}
+  });
+});
+</script>
+</body>
+</html>

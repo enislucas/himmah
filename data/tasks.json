@@ -1,0 +1,3987 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "c_work",
+      "name": "Work",
+      "color": "#4a8fff",
+      "order": 0,
+      "collapsed": false
+    },
+    {
+      "id": "c_side_project",
+      "name": "Side Project",
+      "color": "#22C55E",
+      "order": 1,
+      "collapsed": false
+    },
+    {
+      "id": "c_deen___study",
+      "name": "Deen & Study",
+      "color": "#FACC15",
+      "order": 2,
+      "collapsed": false
+    },
+    {
+      "id": "c_life___family",
+      "name": "Life & Family",
+      "color": "#F472B6",
+      "order": 3,
+      "collapsed": false
+    }
+  ],
+  "items": [
+    {
+      "id": "t1",
+      "type": "task",
+      "title": "Fix off-by-one in the weekly KPI dashboard",
+      "notes": "Manager spotted last week's numbers were a day shifted. Reproduce on staging first — funny enough, same timezone-boundary class of bug as my side-project streak reset.",
+      "categoryId": "c_work",
+      "importance": 3,
+      "urgency": {
+        "due": "2026-06-30",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "after Asr at my desk",
+        "then": "Open the dashboard query and check the date-range filter"
+      },
+      "estimateMins": 60,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 0,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t2",
+      "type": "task",
+      "title": "Send the monthly shift-logistics report to Priya",
+      "notes": "Pull the warehouse throughput numbers, drop them into the template.",
+      "categoryId": "c_work",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-01",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 40,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 1,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t3",
+      "type": "task",
+      "title": "Run the overnight Q2 data export",
+      "notes": "Kick it off and let it run while I do other work; the server takes ~2h. Nothing to babysit.",
+      "categoryId": "c_work",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-06-30",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 5,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 2,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": true
+    },
+    {
+      "id": "t4",
+      "type": "task",
+      "title": "Prep talking points for my 1:1 with my manager",
+      "notes": "Three wins and one blocker.",
+      "categoryId": "c_work",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-02",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "on the train home",
+        "then": "Jot 3 wins and 1 blocker in my notes app"
+      },
+      "estimateMins": 25,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 3,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t5",
+      "type": "task",
+      "title": "Fix the streak-reset bug in the memorization tracker",
+      "notes": "Streak resets at the wrong timezone midnight, so testers lose their hifdh streak unfairly.",
+      "categoryId": "c_side_project",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-03",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 90,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 4,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t6",
+      "type": "task",
+      "title": "Deploy the beta build for 5 testers",
+      "notes": "My cousins plus two friends from the masjid agreed to test — can't ship until Apple approves the build.",
+      "categoryId": "c_side_project",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-05",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 45,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 5,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": {
+        "type": "task",
+        "taskId": "t8"
+      },
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t7",
+      "type": "task",
+      "title": "Write the App Store short description",
+      "notes": "Keep it to two warm sentences about building a daily hifdh habit.",
+      "categoryId": "c_side_project",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-07-09",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 30,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 6,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t8",
+      "type": "task",
+      "title": "Wait on TestFlight review approval",
+      "notes": "Submitted to Apple; usually a day or two. Nothing to do but wait for the email.",
+      "categoryId": "c_side_project",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-07-04",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 7,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": true
+    },
+    {
+      "id": "t9",
+      "type": "task",
+      "title": "Memorize Surah Al-Mulk verses 15-20",
+      "notes": "Review the previous five ayahs first, then add one new line.",
+      "categoryId": "c_deen___study",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-01",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "after Fajr while my mind is fresh",
+        "then": "Recite the previous 5 ayahs, then add one new line"
+      },
+      "estimateMins": 40,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 8,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t10",
+      "type": "task",
+      "title": "Read the fiqh chapter on Zakat for Thursday's class",
+      "notes": "The Aalim course covers it this week; mark the questions I want to ask.",
+      "categoryId": "c_deen___study",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-01",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 50,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 9,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t11",
+      "type": "task",
+      "title": "Write up the Aalim course assignment on Tahaarah",
+      "notes": "500 words, referencing the textbook chapter.",
+      "categoryId": "c_deen___study",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-06",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 75,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 10,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t12",
+      "type": "task",
+      "title": "Order the apostilled safety document for Dad's Umrah",
+      "notes": "He flies in three weeks; the travel agent needs the stamped, apostilled document this week.",
+      "categoryId": "c_life___family",
+      "importance": 3,
+      "urgency": {
+        "due": "2026-07-02",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "during lunch break",
+        "then": "Call the notary office and ask for the apostille turnaround"
+      },
+      "estimateMins": 30,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 11,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t13",
+      "type": "task",
+      "title": "Order winter clothes for my parents from the China site",
+      "notes": "Browse and compare sellers while I'm on a call; let the cart sit, no rush.",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-07-08",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 35,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 12,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": true
+    },
+    {
+      "id": "t14",
+      "type": "task",
+      "title": "Book the dentist check-up I keep putting off",
+      "notes": "It's been over a year.",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "during lunch break",
+        "then": "Call the surgery on Old Street"
+      },
+      "estimateMins": 10,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 13,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t15",
+      "type": "task",
+      "title": "Prep cousin Amina's maths tutoring sheet",
+      "notes": "He's on quadratic equations now — pick 6 worked examples.",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-07-04",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 30,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 14,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t16",
+      "type": "task",
+      "title": "Renew the gym membership before the price goes up",
+      "notes": "New-year rate ends Friday.",
+      "categoryId": "c_life___family",
+      "importance": 2,
+      "urgency": {
+        "due": "2026-07-03",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 10,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 15,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t17",
+      "type": "task",
+      "title": "Grocery shop and meal-prep for the week",
+      "notes": "Sunday batch cook so I stop buying lunch near the office.",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": "2026-07-01",
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 60,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 16,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "t18",
+      "type": "task",
+      "title": "Back up phone photos before storage fills",
+      "notes": "Someday. Let it upload in the background overnight.",
+      "categoryId": "c_life___family",
+      "importance": 0,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 20,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 17,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": true
+    },
+    {
+      "id": "t19",
+      "type": "task",
+      "title": "Read a chapter of the productivity book on the shelf",
+      "notes": "Someday-maybe; it's been sitting there for months.",
+      "categoryId": "c_deen___study",
+      "importance": 0,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 25,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 18,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "parallel": false
+    },
+    {
+      "id": "p_demo1",
+      "type": "project",
+      "title": "Ship v1.0 of the Quran memorization tracker",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 19,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "isMacro": false
+    },
+    {
+      "id": "p_demo1_s1",
+      "type": "task",
+      "title": "Fix the streak-reset timezone bug",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 90,
+      "projectId": "p_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 20,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "p_demo1_s2",
+      "type": "task",
+      "title": "Polish the onboarding screen copy",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 40,
+      "projectId": "p_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 21,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "p_demo1_s3",
+      "type": "task",
+      "title": "Submit the build to TestFlight",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 30,
+      "projectId": "p_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 22,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "p_demo1_s4",
+      "type": "task",
+      "title": "Collect feedback from the 5 testers",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 60,
+      "projectId": "p_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 23,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "p_demo1_s5",
+      "type": "task",
+      "title": "Write the App Store listing + screenshots",
+      "notes": "",
+      "categoryId": "c_side_project",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 50,
+      "projectId": "p_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 24,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1",
+      "type": "project",
+      "title": "Get Dad ready for Umrah",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 25,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "isMacro": true
+    },
+    {
+      "id": "m_demo1_p1",
+      "type": "project",
+      "title": "Sort the travel paperwork",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": "m_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 26,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "isMacro": false
+    },
+    {
+      "id": "m_demo1_p1_s1",
+      "type": "task",
+      "title": "Order the apostilled safety document",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 3,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 30,
+      "projectId": "m_demo1_p1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 27,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p1_s2",
+      "type": "task",
+      "title": "Photocopy passport + vaccination card",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 15,
+      "projectId": "m_demo1_p1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 28,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p1_s3",
+      "type": "task",
+      "title": "Confirm the visa is attached to the booking",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 20,
+      "projectId": "m_demo1_p1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 29,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p2",
+      "type": "project",
+      "title": "Pack and prepare the ihram kit",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": "m_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 30,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "isMacro": false
+    },
+    {
+      "id": "m_demo1_p2_s1",
+      "type": "task",
+      "title": "Buy two ihram towels and a money belt",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 40,
+      "projectId": "m_demo1_p2",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 31,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p2_s2",
+      "type": "task",
+      "title": "Print the dua and ritual checklist booklet",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 25,
+      "projectId": "m_demo1_p2",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 32,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p3",
+      "type": "project",
+      "title": "Arrange logistics back home",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": "m_demo1",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 33,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "isMacro": false
+    },
+    {
+      "id": "m_demo1_p3_s1",
+      "type": "task",
+      "title": "Set up a call schedule while he's away",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 1,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 15,
+      "projectId": "m_demo1_p3",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 34,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "m_demo1_p3_s2",
+      "type": "task",
+      "title": "Brief Mum on the home admin he usually handles",
+      "notes": "",
+      "categoryId": "c_life___family",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": 30,
+      "projectId": "m_demo1_p3",
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": null,
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": null,
+      "history": [],
+      "inFocus": false,
+      "order": 35,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false
+    },
+    {
+      "id": "h1",
+      "type": "rhythm",
+      "title": "Memorize Quran daily",
+      "notes": "One new line a day, after Fajr. The willpower is in not letting a busy day break the streak.",
+      "categoryId": "hc_religion",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": "daily",
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": "2026-06-29",
+      "history": [
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-28",
+        "2026-06-29"
+      ],
+      "inFocus": false,
+      "order": 36,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": true,
+      "queued": false,
+      "travel": {
+        "keep": true,
+        "reduce": false
+      }
+    },
+    {
+      "id": "h2",
+      "type": "rhythm",
+      "title": "Gym session (push / pull / legs)",
+      "notes": "The hard one. Set the gym bag out the night before so there's no excuse.",
+      "categoryId": "hc_self",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": "weekly",
+      "everyNDays": null,
+      "perWeek": 3,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": "2026-06-28",
+      "history": [
+        "2026-06-21",
+        "2026-06-25",
+        "2026-06-28"
+      ],
+      "inFocus": false,
+      "order": 37,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "queued": false,
+      "travel": {
+        "keep": true,
+        "reduce": false
+      }
+    },
+    {
+      "id": "h3",
+      "type": "rhythm",
+      "title": "30 minutes of focused Arabic study",
+      "notes": "Active grammar drills, not just passive reading.",
+      "categoryId": "hc_religion",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": "daily",
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": "2026-06-29",
+      "history": [
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-28",
+        "2026-06-29"
+      ],
+      "inFocus": false,
+      "order": 38,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "queued": false,
+      "travel": {
+        "keep": true,
+        "reduce": false
+      }
+    },
+    {
+      "id": "h4",
+      "type": "rhythm",
+      "title": "No phone for the first 30 min after waking",
+      "notes": "The constant pull to grab it is the real test.",
+      "categoryId": "hc_self",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": "daily",
+      "everyNDays": null,
+      "perWeek": null,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": "2026-06-29",
+      "history": [
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-28",
+        "2026-06-29"
+      ],
+      "inFocus": false,
+      "order": 39,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "queued": false,
+      "travel": {
+        "keep": true,
+        "reduce": false
+      }
+    },
+    {
+      "id": "h5",
+      "type": "rhythm",
+      "title": "Weekly review + plan the next week",
+      "notes": "Sunday evening: clear the inbox, set next week's one focus.",
+      "categoryId": "hc_self",
+      "importance": 2,
+      "urgency": {
+        "due": null,
+        "soon": false
+      },
+      "status": "active",
+      "nextAction": {
+        "if": "",
+        "then": ""
+      },
+      "estimateMins": null,
+      "projectId": null,
+      "subtaskIds": [],
+      "nextActionId": null,
+      "cadence": "weekly",
+      "everyNDays": null,
+      "perWeek": 1,
+      "perMonth": null,
+      "streak": 0,
+      "lastDone": "2026-06-28",
+      "history": [
+        "2026-06-21",
+        "2026-06-25",
+        "2026-06-28"
+      ],
+      "inFocus": false,
+      "order": 40,
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00",
+      "completedAt": null,
+      "waitingOn": null,
+      "protected": false,
+      "queued": false,
+      "travel": {
+        "keep": true,
+        "reduce": false
+      }
+    }
+  ],
+  "meta": {
+    "savedAt": "2026-06-29T09:00:00",
+    "revertedAutoRhythms": true,
+    "rhythmsAutoDetected": true,
+    "ui": {
+      "viewMode": "category"
+    },
+    "guardian": {
+      "protectedIds": [
+        "h1"
+      ],
+      "deal": null,
+      "ledger": []
+    },
+    "guardianIntroSeen": true,
+    "habitsIntroSeen": true,
+    "rhythmsIntroSeen": true,
+    "inboxIntroSeen": true,
+    "demo": true,
+    "tourDone": false
+  },
+  "rhythms": [
+    {
+      "id": "ry_rel_0",
+      "title": "Adhkar after every fard prayer",
+      "cat": "religious",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_rel_1",
+      "title": "Sunnah rawatib with the daily prayers",
+      "cat": "religious",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_rel_2",
+      "title": "Surah Al-Kahf on Friday",
+      "cat": "religious",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_rel_3",
+      "title": "Bismillah and dua before meals",
+      "cat": "religious",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_nat_0",
+      "title": "Morning sunlight on the balcony with coffee",
+      "cat": "natural",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_nat_1",
+      "title": "Lights and screens off by 11pm",
+      "cat": "natural",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_nat_2",
+      "title": "Walk to the masjid for Maghrib",
+      "cat": "natural",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    },
+    {
+      "id": "ry_nat_3",
+      "title": "Tidy the desk before logging off work",
+      "cat": "natural",
+      "cadence": "daily",
+      "missDates": [],
+      "createdAt": "2026-06-29T09:00:00",
+      "updatedAt": "2026-06-29T09:00:00"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sch_prayer",
+      "name": "Prayer",
+      "color": "#FACC15",
+      "hidden": false
+    },
+    {
+      "id": "sch_tasks",
+      "name": "Tasks",
+      "color": "#4a8fff",
+      "hidden": false
+    },
+    {
+      "id": "sch_work",
+      "name": "Work",
+      "color": "#3B82F6",
+      "hidden": false
+    },
+    {
+      "id": "sch_aalim_course",
+      "name": "Aalim Course",
+      "color": "#A855F7",
+      "hidden": false
+    },
+    {
+      "id": "sch_health",
+      "name": "Health",
+      "color": "#22C55E",
+      "hidden": false
+    }
+  ],
+  "events": [
+    {
+      "id": "ev_demo1",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-06-29",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo2",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-06-30",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo3",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-01",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo4",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-02",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo5",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-03",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo6",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-04",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo7",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-05",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo8",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-06",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo9",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-07",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo10",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-08",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo11",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-09",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo12",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-10",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo13",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-11",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo14",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-12",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo15",
+      "scheduleId": "sch_prayer",
+      "title": "Fajr",
+      "date": "2026-07-13",
+      "start": "04:18",
+      "end": "04:33",
+      "allDay": false,
+      "notes": "The daily Quran-memorization habit sits right after.",
+      "seriesId": "ser_fajr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo16",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-06-29",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo17",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-06-30",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo18",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-01",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo19",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-02",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo20",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-03",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo21",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-04",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo22",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-05",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo23",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-06",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo24",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-07",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo25",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-08",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo26",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-09",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo27",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-10",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo28",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-11",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo29",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-12",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo30",
+      "scheduleId": "sch_prayer",
+      "title": "Dhuhr",
+      "date": "2026-07-13",
+      "start": "13:05",
+      "end": "13:20",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_dhuhr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo31",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-06-29",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo32",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-06-30",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo33",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-01",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo34",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-02",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo35",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-03",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo36",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-04",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo37",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-05",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo38",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-06",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo39",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-07",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo40",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-08",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo41",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-09",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo42",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-10",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo43",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-11",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo44",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-12",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo45",
+      "scheduleId": "sch_prayer",
+      "title": "Asr",
+      "date": "2026-07-13",
+      "start": "17:25",
+      "end": "17:40",
+      "allDay": false,
+      "notes": "The KPI-bug if-then is anchored to right after Asr at my desk.",
+      "seriesId": "ser_asr_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo46",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-06-29",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo47",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-06-30",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo48",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-01",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo49",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-02",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo50",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-03",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo51",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-04",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo52",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-05",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo53",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-06",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo54",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-07",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo55",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-08",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo56",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-09",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo57",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-10",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo58",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-11",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo59",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-12",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo60",
+      "scheduleId": "sch_prayer",
+      "title": "Maghrib",
+      "date": "2026-07-13",
+      "start": "21:18",
+      "end": "21:33",
+      "allDay": false,
+      "notes": "The walk-to-the-masjid rhythm lands here.",
+      "seriesId": "ser_maghrib_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo61",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-06-29",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo62",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-06-30",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo63",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-01",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo64",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-02",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo65",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-03",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo66",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-04",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo67",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-05",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo68",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-06",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo69",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-07",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo70",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-08",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo71",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-09",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo72",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-10",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo73",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-11",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo74",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-12",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo75",
+      "scheduleId": "sch_prayer",
+      "title": "Isha",
+      "date": "2026-07-13",
+      "start": "22:45",
+      "end": "23:00",
+      "allDay": false,
+      "notes": "",
+      "seriesId": "ser_isha_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo76",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-06-29",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo77",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-06-30",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo78",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-01",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo79",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-02",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo80",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-03",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo81",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-04",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo82",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-05",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo83",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-06",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo84",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-07",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo85",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-08",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo86",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-09",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo87",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-10",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo88",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-11",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo89",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-12",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo90",
+      "scheduleId": "sch_tasks",
+      "title": "Morning Quran memorization",
+      "date": "2026-07-13",
+      "start": "04:35",
+      "end": "05:15",
+      "allDay": false,
+      "notes": "Right after Fajr while the mind is fresh — protected guardian time.",
+      "seriesId": "ser_morning_quran_memorizati_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo91",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-06-29",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo92",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-06-30",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo93",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-01",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo94",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-02",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo95",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-03",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo96",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-04",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo97",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-05",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo98",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-06",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo99",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-07",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo100",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-08",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo101",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-09",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo102",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-10",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo103",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-11",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo104",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-12",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo105",
+      "scheduleId": "sch_work",
+      "title": "Daily work standup",
+      "date": "2026-07-13",
+      "start": "09:30",
+      "end": "09:45",
+      "allDay": false,
+      "notes": "Quick team sync.",
+      "seriesId": "ser_daily_work_standup_0",
+      "rrule": {
+        "freq": "daily",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo106",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-07-02",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo107",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-07-09",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo108",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-07-16",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo109",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-07-23",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo110",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-07-30",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo111",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-08-06",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo112",
+      "scheduleId": "sch_work",
+      "title": "1:1 with my manager",
+      "date": "2026-08-13",
+      "start": "15:00",
+      "end": "15:30",
+      "allDay": false,
+      "notes": "Bring the 3 wins and 1 blocker I prepped on the train.",
+      "seriesId": "ser_1_1_with_my_manager_3",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-02"
+      }
+    },
+    {
+      "id": "ev_demo113",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-06-30",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo114",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-07-07",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo115",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-07-14",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo116",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-07-21",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo117",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-07-28",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo118",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-08-04",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo119",
+      "scheduleId": "sch_aalim_course",
+      "title": "Aalim course - Fiqh of Worship",
+      "date": "2026-08-11",
+      "start": "19:30",
+      "end": "21:00",
+      "allDay": false,
+      "notes": "Evening class; the Zakat chapter this week.",
+      "seriesId": "ser_aalim_course___fiqh_of_w_1",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-30"
+      }
+    },
+    {
+      "id": "ev_demo120",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-07-01",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo121",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-07-08",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo122",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-07-15",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo123",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-07-22",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo124",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-07-29",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo125",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-08-05",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo126",
+      "scheduleId": "sch_health",
+      "title": "Gym - leg day",
+      "date": "2026-08-12",
+      "start": "18:00",
+      "end": "19:00",
+      "allDay": false,
+      "notes": "The effortful habit, blocked in so it actually happens.",
+      "seriesId": "ser_gym___leg_day_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo127",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-07-04",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo128",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-07-11",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo129",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-07-18",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo130",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-07-25",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo131",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-08-01",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo132",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-08-08",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo133",
+      "scheduleId": "sch_tasks",
+      "title": "Maths tutoring with cousin Amina",
+      "date": "2026-08-15",
+      "start": "11:00",
+      "end": "12:00",
+      "allDay": false,
+      "notes": "Saturday mornings; quadratics this week.",
+      "seriesId": "ser_maths_tutoring_with_cous_5",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-04"
+      }
+    },
+    {
+      "id": "ev_demo134",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-07-01",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo135",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-07-08",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo136",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-07-15",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo137",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-07-22",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo138",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-07-29",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo139",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-08-05",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo140",
+      "scheduleId": "sch_prayer",
+      "title": "Jumu'ah prayer",
+      "date": "2026-08-12",
+      "start": "13:00",
+      "end": "14:00",
+      "allDay": false,
+      "notes": "Leave a little early from work; read Surah Al-Kahf today.",
+      "seriesId": "ser_jumu_ah_prayer_2",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-07-01"
+      }
+    },
+    {
+      "id": "ev_demo141",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-06-29",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo142",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-07-06",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo143",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-07-13",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo144",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-07-20",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo145",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-07-27",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo146",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-08-03",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo147",
+      "scheduleId": "sch_tasks",
+      "title": "Call my parents",
+      "date": "2026-08-10",
+      "start": "20:00",
+      "end": "20:30",
+      "allDay": false,
+      "notes": "Sunday evening catch-up; sort out the China clothes order with Mum.",
+      "seriesId": "ser_call_my_parents_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo148",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-06-29",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo149",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-07-06",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo150",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-07-13",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo151",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-07-20",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo152",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-07-27",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo153",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-08-03",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    },
+    {
+      "id": "ev_demo154",
+      "scheduleId": "sch_tasks",
+      "title": "Weekly review + plan",
+      "date": "2026-08-10",
+      "start": "21:45",
+      "end": "22:30",
+      "allDay": false,
+      "notes": "Sunday wind-down: clear the inbox and set next week's focus.",
+      "seriesId": "ser_weekly_review___plan_0",
+      "rrule": {
+        "freq": "weekly",
+        "anchor": "2026-06-29"
+      }
+    }
+  ]
+}
