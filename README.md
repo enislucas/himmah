@@ -20,7 +20,14 @@ Himmah is a local-first personal dashboard: dump whatever is on your mind, shape
 
 ## Quick start (Windows)
 
-**Easiest:** grab the ZIP from [Releases](../../releases), unzip it anywhere, and double-click **`Start Himmah.bat`**. It finds (or auto-installs) Python 3, starts Himmah at `http://127.0.0.1:7777/`, and opens your browser. Keep the black window open while you use the app; close it to stop.
+**Easiest:** grab the ZIP from [Releases](../../releases) and unzip it anywhere. Then, one time:
+
+1. Double-click **`Start Himmah.bat`** once - it finds (or auto-installs) Python 3. (You only need this the first time, to get Python.)
+2. Double-click **`Create Desktop Shortcut.vbs`** - it puts a **Himmah** icon on your desktop.
+
+From then on, open Himmah from that **desktop shortcut**. It launches as a clean **standalone app window** - no browser tabs, no address bar, and **no black command window running alongside it**. Close the window to stop Himmah.
+
+*(Prefer the simple way? Double-clicking `Start Himmah.bat` on its own still works - it just keeps a small console window open while the app runs.)*
 
 **From a clone:**
 
@@ -58,7 +65,9 @@ Guide 2 (optional, ~10 min) adds one-click **Google Meet links** on calendar eve
 |---|---|
 | `server.py` | The whole backend - one stdlib-Python file. |
 | `index.html`, `app.js`, `styles.css` | The whole frontend - plain web, no framework, no build step. |
-| `Start Himmah.bat` | Windows launcher (finds or installs Python, starts the server, opens the app). |
+| `Himmah.vbs` | The clean launcher - starts Himmah as a standalone app window with no command box. |
+| `Create Desktop Shortcut.vbs` | Run once to put a Himmah icon on your desktop. |
+| `Start Himmah.bat` | First-run helper (finds or installs Python) and a no-frills fallback launcher. |
 | `Setup Guides/` | The two optional online-feature guides + START HERE. |
 | `data/tasks.json` | **Your data.** Ships as Yusuf's demo week; *Make it yours* replaces it with your life. |
 | `data/snapshots/` | Automatic version history - powers the in-app History panel. |

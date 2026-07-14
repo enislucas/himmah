@@ -4,3 +4,4 @@ data/deepseek_key.txt
 # python runtime junk
 __pycache__/
 *.pyc
+.appwindow/
